@@ -91,6 +91,14 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         }
     }
     
+    @IBAction func newButtonClicked(_ sender: Any) {
+        nameTextField.text = ""
+        phoneTextField.text = ""
+        addressTextField.text = ""
+        
+    }
+    
+    
     //MARK:TableView Functions
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         nameTextField.text = contacts[indexPath.row].name
